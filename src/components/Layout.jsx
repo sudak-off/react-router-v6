@@ -1,19 +1,17 @@
 import React from 'react';
-import { NavLink, Outlet } from "react-router-dom";
-
-const setActive = ({isActive})=> isActive ? 'active-link' : '';
+import { Link, Outlet } from "react-router-dom";
 
 const Layout = () => {
     return (
         <>
             <header>
-                <NavLink to="/" className={setActive}>Home</NavLink>
-                <NavLink to="/blog" className={setActive}>Post</NavLink>
-                <NavLink to="/about" className={setActive}>About</NavLink>
+                <Link to="/">Home</Link>
+                <Link to="/blog">Post</Link>
+                <Link to="/about">About</Link>
             </header>
 
             <Outlet />
-
+            // вся динамика будет здесь
 
             <footer>2022</footer>
         </>
