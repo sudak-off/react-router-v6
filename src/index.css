@@ -1,4 +1,5 @@
 :root {
+  --color-active: #80BDE3;
   --color-bg: #2C2C32;
   --color-bg-hover: #0f7dc6;
 }
@@ -33,4 +34,14 @@ h1 {
   max-width: 900px;
   padding: 2rem 0;
   margin: 0 auto;
+}
+
+/*при переходе динамически фиксирует цвет - фича  */
+/*.active{*/
+/*  color: var(--color-active);*/
+/*  cursor: default;*/
+/*}*/
+.active-link{
+  color: var(--color-active);
+  cursor: default;
 }
