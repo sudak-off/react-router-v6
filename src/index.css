@@ -1,4 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
 :root {
+  --color-active: #0f7dc6;
   --color-bg: #2C2C32;
   --color-bg-hover: #0f7dc6;
 }
@@ -33,4 +38,9 @@ h1 {
   max-width: 900px;
   padding: 2rem 0;
   margin: 0 auto;
+}
+
+.active-link{
+  color: var(--color-active);
+  cursor: default;
 }
